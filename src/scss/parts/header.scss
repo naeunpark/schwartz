@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    i {
+        margin: 2.5rem;
+        font-size: 3rem;
+        position: absolute;
+    }
+    & > *:not(i){
+        margin: 2.5rem 8rem;
+    }
+}

@@ -1,5 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import  'foundation/normalize.scss';
+@import 'foundation/_variables.scss';
+@import 'foundation/_animation.scss';
+@import 'parts/header.scss';
+@import 'parts/carousel.scss';
