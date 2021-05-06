@@ -3,3 +3,14 @@
 @import 'foundation/_animation.scss';
 @import 'parts/header.scss';
 @import 'parts/carousel.scss';
+
+main {
+    section {
+        max-width: 1000px;
+        margin: auto;
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+}

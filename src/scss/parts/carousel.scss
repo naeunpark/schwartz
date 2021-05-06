@@ -1,3 +1,5 @@
+@import 'foundation/_animation.scss';
+
 .carousel {
     height: 75vh;
     width: 100%;
@@ -9,7 +11,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 1s linear;
+    }
+    .fadein {
+        animation: fadeIn 1s linear;
     }
 }
+

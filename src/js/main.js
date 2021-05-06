@@ -4,23 +4,23 @@ const imgArry = [];
 
 const NO_OF_IMG = 6;
 const IMG_ROOT = "dist/img/";
-const CN_FADEIN = "fadeIn";
+const CN_FADEIN = "fadein";
 
 let count = 0;
 
 function makeElements() {
-    img.style.opacity = 0;
     if(count < NO_OF_IMG) {
+        // img.classList.remove(CN_FADEIN);
         img.src = imgArry[count];
-        setTimeout(() => {
-            img.style.opacity = 1;
-        }, 1000);
+        // img.classList.add(CN_FADEIN);
         count ++;
     } else {
         count = 0;
+        // img.classList.remove(CN_FADEIN);
         img.src = imgArry[count];
-        img.style.opacity = 1;
+        // img.classList.add(CN_FADEIN);
     }
+
 }
 
 function getImage() {
