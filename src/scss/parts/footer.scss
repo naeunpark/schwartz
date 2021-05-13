@@ -1,0 +1,14 @@
+footer {
+    background-color: rgba(33, 32, 32, .83);
+    color: white;
+    font-weight: 500;
+    padding: $margin;
+    .footer__top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin-bottom: 10rem;
+    }
+    p {
+        margin-top: $margin;
+    }
+}

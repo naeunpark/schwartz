@@ -3,14 +3,72 @@
 @import 'foundation/_animation.scss';
 @import 'parts/header.scss';
 @import 'parts/carousel.scss';
+@import 'parts/articles.scss';
+@import 'parts/footer.scss';
 
-main {
+// General CSS Start
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: $black;
+}
+.btn {
+    border: $border;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color .5s linear;
+    &:hover {
+        background-color: $black;
+        color: white;
+    }
+}
+// General CSS End
+ main {
+     padding: 3rem;
     section {
-        max-width: 1000px;
-        margin: auto;
         h1 {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: $margin;
+            font-size: 3.2rem;
+            font-weight: 600;
         }
+        p {
+            font-size: 3rem;
+            span {
+                font-size: $margin;
+                font-weight: 600;
+                margin-right: 5rem;
+            }
+        }
+    }
+    .about {
+        h1 {
+            margin-bottom: 10rem;
+        }
+        i.fa-arrow-down {
+            position: absolute;
+            top: 820px;
+            right: 50px;
+            font-size: 3rem;
+        }
+        a {
+            font-size: 2.5rem;
+            font-weight: 500;
+            display: block;
+            margin: $margin 0 15rem;
+            span{
+                display: inline-block;
+                transition: transform .5s linear;
+            }
+            &:hover span{
+                transform: translateX(10px);
+            }
+        }
+        
     }
 }

@@ -1,0 +1,34 @@
+.articles {
+    .article__row {
+        display: flex;
+        gap: $margin;
+        padding: $margin 0;
+        border-top: $border;
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+        }
+        .article__column{
+            flex-grow: 1;
+            max-width: 50%;
+            h2 {
+                margin-bottom: 3rem;
+            }
+            p {
+                margin: 4rem 0;
+            }
+            img {
+                width: 100%;
+                height: 270px;
+            }
+            .article__column--smallText {
+                font-size: 2.5rem; 
+            }
+            .article__img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
